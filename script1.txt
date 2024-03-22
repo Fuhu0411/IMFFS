@@ -1,0 +1,24 @@
+save test/4 a
+save test/1 b
+save test/4 e
+save test/1 f
+save test/256 c
+save test/4 d
+save test/1 g
+dir
+load g 1out
+delete b
+delete e
+delete d
+save test/1 b
+save test/8 h
+save test/8 i
+delete g
+delete f
+save test/empty empty
+save test/1 j
+load empty emptyout
+fulldir
+defrag
+load c 256out
+fulldir
